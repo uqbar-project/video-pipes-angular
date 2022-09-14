@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+div {
+  margin: 0 0 0.5em 0;
+}
+
+.form--nombre {
+  font-size: 1.2em;
+}
+
+.form--saldo {
+  margin: 0.5em;
+  background-color:lightblue;
+  padding: 0.2em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.titulo {
+  font-size: 1.3em;
+  margin: 1em 0;
+  padding: 1em 0.5em;
+  background: rgb(128,156,153);
+  background: linear-gradient(90deg, rgba(154, 183, 180, 0) 0%, rgba(128,156,153,1) 0%, rgb(179, 199, 202) 80%);
+}

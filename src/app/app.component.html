@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo pipes</title>
+</head>
+<body>
+  <div class="titulo">
+    <span>Información de un cliente - pipes built-in</span>
+  </div>
+  <div>
+    <span><strong>Nombre: </strong></span>
+    <span>{{cliente.nombre | uppercase }}</span>
+  </div>
+  <div>
+    <span><strong>Saldo: </strong></span>
+    <span>{{cliente.saldo | number:'1.2-2' }}</span>
+  </div>
+  <div>
+    <span><strong>Nombre: </strong></span>
+    <span>{{cliente.fechaNacimiento | date:'dd/MM/yyyy' }}</span>
+  </div>
+  <hr/>
+  <div class="titulo">
+    <span>Clientes - pipe custom</span>
+  </div>
+  <div>
+    <input [(ngModel)]="textoBusqueda" class="form--data"/>
+  </div>
+  <div>
+    <div class="row" *ngFor="let cliente of clientes | filtroClientes:textoBusqueda">
+      <div>
+        <span class="form--nombre">{{cliente.nombre}}</span>
+        <span class="form--saldo">{{cliente.saldo | currency:"$ "}}</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
