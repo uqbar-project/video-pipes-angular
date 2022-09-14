@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "eg-pipes-angular": {
+    "video-pipes-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/eg-pipes-angular",
+            "outputPath": "dist/video-pipes-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "eg-pipes-angular:build:production"
+              "browserTarget": "video-pipes-angular:build:production"
             },
             "development": {
-              "browserTarget": "eg-pipes-angular:build:development"
+              "browserTarget": "video-pipes-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "eg-pipes-angular:build"
+            "browserTarget": "video-pipes-angular:build"
           }
         },
         "test": {
