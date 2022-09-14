@@ -1,5 +1,5 @@
 
-[![Build](https://github.com/uqbar-project/video-pipes-angular/actions/workflows/build.yml/badge.svg)](https://github.com/uqbar-project/video-pipes-angular/actions/workflows/build.yml)
+[![Build](https://github.com/uqbar-project/video-pipes-angular/actions/workflows/build.yml/badge.svg)](https://github.com/uqbar-project/video-pipes-angular/actions/workflows/build.yml) ![coverage](./badges/video-pipes-angular/coverage.svg)
 
 ## Ejemplo Pipes Angular
 
